@@ -1,0 +1,10 @@
+services:
+  collector:
+    build: .
+    container_name: airquality-collector
+    volumes:
+      - ./data_lake:/app/data_lake
+      - ./logs:/app/logs
+    environment:
+      - LANDING_DIR=data_lake/landing/raw
+      - LOG_FILE=logs/pipeline.log
