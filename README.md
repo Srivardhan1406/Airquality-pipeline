@@ -51,3 +51,4 @@ bash scripts/git_workflow_demo.sh
 - `umask 027`, directories `750`, quarantine `700`, data files `640`
 - Container runs as a **non-root** user
 - `data_lake/`, `logs/`, `.env` excluded from Git
+- Author: Srivardhan
